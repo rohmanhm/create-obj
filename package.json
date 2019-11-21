@@ -1,0 +1,56 @@
+{
+  "name": "create-obj",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/create-obj.esm.js",
+  "typings": "dist/index.d.ts",
+  "repository": "rohmanhm/create-obj",
+  "description": "Create a new object with only keep truthy key value",
+  "author": {
+    "name": "Rohman Habib M",
+    "email": "rohmanhm@icloud.com",
+    "url": "https://rohmanhm.github.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "create",
+    "object",
+    "key",
+    "keys",
+    "value",
+    "values",
+    "iterate",
+    "iterator"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "husky": "^3.1.0",
+    "tsdx": "^0.11.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "filter-obj": "^2.0.1"
+  }
+}
