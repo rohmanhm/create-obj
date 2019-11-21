@@ -16,3 +16,6 @@ type Methods<T> = Pick<T, MethodKeys<T>>;
 export function CreateObj<ObjectType>(obj: ObjectType): Methods<ObjectType> {
   return filterObj(obj, (_, value) => Boolean(value)) as Methods<ObjectType>;
 }
+
+// Provide shortcut
+export const co = CreateObj;

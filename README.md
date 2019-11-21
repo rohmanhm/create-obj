@@ -20,6 +20,8 @@ $ yarn add create-obj
 import { CreateObj } from 'create-obj';
 // Or
 const { CreateObj } = require('create-obj');
+// Or you can use the `co` shortcut
+import { co } from 'create-obj';
 
 const object = {
   className: 'only-this-obj-key-will-persist',
@@ -28,7 +30,7 @@ const object = {
   checked: undefined,
   spellCheck: null,
 };
-const newObject = createObject(object);
+const newObject = co(object);
 //=> {className: 'only-this-obj-key-will-persist'}
 ```
 
